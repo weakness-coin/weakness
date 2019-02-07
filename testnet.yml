@@ -2,24 +2,24 @@ version: '3'
 
 services:
   node1:
-    image: funkypenguin/turtlecoin
-    container_name: turtletest-node1
+    image: funkypenguin/weaknesscoin
+    container_name: weaknesstest-node1
     volumes:
-      - ../turtlecoind:/var/lib/turtlecoind/
+      - ../weaknesscoind:/var/lib/weaknesscoind/
     networks:
       testnet:
         ipv4_address: 172.16.76.11
   
 #  node2:
-#    image: funkypenguin/turtlecoin
-#    container_name: turtletest-node2
+#    image: funkypenguin/weaknesscoin
+#    container_name: weaknesstest-node2
 #    networks:
 #      testnet:
 #        ipv4_address: 172.16.76.12
   
 #  node3:
-#    image: funkypenguin/turtlecoin
-#    container_name: turtletest-node3
+#    image: funkypenguin/weaknesscoin
+#    container_name: weaknesstest-node3
 #    networks:
 #      testnet:
 #        ipv4_address: 172.16.76.13
